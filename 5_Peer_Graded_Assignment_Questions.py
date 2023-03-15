@@ -75,7 +75,7 @@ app.layout = html.Div(children=[
                                 # TASK1: Add title to the dashboard
                                 # Enter your code below. Make sure you have correct formatting.
                                 html.H1('US Domestic Airline Flights Performance',
-                                        style={"testAlign": "center",
+                                        style={"textAlign": "center",
                                                "color": "#503D36",
                                                "font-size": "24"}),
                                 # REVIEW2: Dropdown creation
@@ -132,13 +132,12 @@ app.layout = html.Div(children=[
                                 
                                 # TASK3: Add a division with two empty divisions inside. See above disvision for example.
                                 # Enter your code below. Make sure you have correct formatting.
-                               html.Div([html.Div(id="plot4",
-                                                  children=[],
-                                                  style="flex"),
+                                html.Div([html.Div(id="plot4",
+                                                  children=[]),
                                          html.Div(id="plot5", 
-                                                  children=[],
-                                                  style="flex"),
-                                         ],),
+                                                  children=[]),
+                                         ],
+                                         style={"display": "flex"}),
                                 ])
 
 # Callback function definition
